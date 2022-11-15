@@ -1,0 +1,49 @@
+
+    <link rel="stylesheet" type="text/css" href="http://dracp.cpu-bioinfor.org/molviewer/pdbe-molstar-light-3.0.0.css">
+    <script type="text/javascript" src="http://dracp.cpu-bioinfor.org/molviewer/pdbe-molstar-plugin-3.0.0.js"></script>
+    <style>
+      .msp-plugin ::-webkit-scrollbar-thumb {
+          background-color: #474748 !important;
+      }
+      .viewerSection {
+        margin: 95px 0 0 0;
+      }
+      #myViewer{
+        width:300px;
+        height: 270px;
+        position:relative;
+      }
+      .msp-sequence-wrapper-non-empty{
+          background-color: #fff;
+      }
+    </style>
+
+
+       
+      <!-- Molstar container -->
+      <div class="viewerSection">
+          <div id="myViewer"></div>
+        </div>
+    
+    <script>
+        
+      //Create plugin instance
+      var viewerInstance = new PDBeMolstarPlugin();
+      //Set options (Checkout available options list in the documentation)
+      var options = {
+        customData: {
+          url: 'http://dravp.cpu-bioinfor.org/Structure/PDB_structure/2ERI.pdb',
+          format: 'pdb'
+        },
+        alphafoldView: true,
+        bgColor: {r:255, g:255, b:255},
+        hideCanvasControls: ['selection', 'animation', 'controlToggle', 'controlInfo']
+      }
+      
+      //Get element from HTML/Template to place the viewer 
+      var viewerContainer = document.getElementById('myViewer');
+  
+      //Call render method to display the 3D view
+      viewerInstance.render(viewerContainer, options);
+      
+    </script>
