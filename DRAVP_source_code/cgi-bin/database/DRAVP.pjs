@@ -1,0 +1,22 @@
+{
+  "version": "1.2",
+  "dbname": "DRAVP",
+  "dbtype": "Protein",
+  "db-version": 5,
+  "description": "DRAVP.fasta",
+  "number-of-letters": 95871,
+  "number-of-sequences": 1853,
+  "last-updated": "2022-10-07T15:18:00",
+  "number-of-volumes": 1,
+  "bytes-total": 316155,
+  "bytes-to-cache": 112637,
+  "files": [
+    "DRAVP.pdb",
+    "DRAVP.phr",
+    "DRAVP.pin",
+    "DRAVP.pot",
+    "DRAVP.psq",
+    "DRAVP.ptf",
+    "DRAVP.pto"
+  ]
+}
